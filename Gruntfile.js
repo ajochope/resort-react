@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function (grunt) {
     grunt.initConfig({
-        timeNow: (new Date()).getTime(),
+        timeNow: (new Date(Date.now())).toLocaleTimeString(),
         shell: {
             multiple: {
                 command: [
