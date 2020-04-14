@@ -7,10 +7,8 @@ module.exports = function (grunt) {
                 command: [
                     'git add . && git commit -m "new_mods_<%= timeNow %>" && git push origin master',
                     'npm run build',
-                    'cd ./build',
-                    'ftp -n <<EOF open 192.168.1.134 2121 user ksweb ksweb mdelete * EOF',
-                    'ftp -n <<EOF open 192.168.1.134 2121 user ksweb ksweb mput * ls EOF',
-                    'cd ..',
+                    ' ./delete.sh ',
+                    ' ./copy.sh '
                 ].join('&&')
             }
         }

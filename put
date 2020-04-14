@@ -1,0 +1,5 @@
+lftp ksweb@192.168.1.134:~> ^Z
+lftp ksweb@192.168.1.134:~> cc^Z[K
+lftp ksweb@192.168.1.134:~> Ω∑
+lftp ksweb@192.168.1.134:~> 
+lftp ksweb@192.168.1.134:~> -e 'mirror /home/olduser/public_html /home/newuser/public_html'∑©©^Z-e 'mirror /home/olduser/public_html /home/newuser/public_html'-e 'mirror /home/olduser/public_html /home/newuser/public_html'-e 'mirror /home/olduser/public_html /home/newuser/public_html'∑∑^Vexit
