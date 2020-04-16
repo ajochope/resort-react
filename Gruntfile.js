@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         shell: {
             multiple: {
                 command: [
-                    'git add . && git commit -m "new_mods_<%= timeNow %>" && git push origin master',
+                    ' ./commit.sh',
                     'npm run build',
                     ' ./delete.sh ',
                     ' ./copy.sh '
