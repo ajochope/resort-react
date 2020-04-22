@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOST=192.168.1.134
+HOST=192.168.1.135
 PORT=2121
 USER=ksweb
 PASSWD=ksweb
