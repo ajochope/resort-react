@@ -4,7 +4,7 @@ import RoomsList from './RoomsList';
 import {withRoomConsumer} from '../context';
 import Loading from './Loading';
 
-function RoomContainer({context}){
+function RoomsContainer({context}){
     const {loading,sortedRooms,rooms} = context;
 
     if(loading){
@@ -18,7 +18,7 @@ function RoomContainer({context}){
     )
 }
 
-export default withRoomConsumer(RoomContainer);
+export default withRoomConsumer(RoomsContainer);
 
 // import React from 'react';
 // import RoomsFilter from './RoomsFilter';

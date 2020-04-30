@@ -24,11 +24,11 @@ export default class SingleRoom extends Component {
         const room = getRoom(this.state.slug);
         if(!room){
             return <div className="error">
-                <h3>No such room cloud be found...</h3>
-                <Link to="/rooms" className="btn-primary">
-                    Back to rooms
-                </Link>
-            </div>
+                        <h3>No such room cloud be found...</h3>
+                        <Link to="/rooms" className="btn-primary">
+                            Back to rooms
+                        </Link>
+                   </div>
         }
         const {name,description,capacity,size,price,extras,breakfast,pets,images} = room;
         const [mainImg, ...defaultImg] = images;

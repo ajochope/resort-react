@@ -1,14 +1,9 @@
 #!/bin/bash
 
-HOST=192.168.1.135
-PORT=2121
-USER=ksweb
-PASSWD=ksweb
-
 echo
-echo "Delete htdocs on local FTP server $HOST"
+echo "Delete htdocs on local FTP server $TABLET_IP"
 checkfolder=$(
-lftp -p $PORT -u $USER,$PASSWD $HOST <<EOF
+lftp -p $TABLET_PORT -u $TABLET_USER,$TABLET_PASS $TABLET_IP <<EOF
 ls 
 EOF
 )
@@ -17,7 +12,7 @@ then
 echo "Carpeta no hay ficheros"
 else
 echo "Veo fichero para borrar"
-lftp -p $PORT -u $USER,$PASSWD $HOST <<EOF
+lftp -p $TABLET_PORT -u $TABLET_USER,$TABLET_PASS $TABLET_IP <<EOF
 glob -a rm -rf *
 EOF
 fi
